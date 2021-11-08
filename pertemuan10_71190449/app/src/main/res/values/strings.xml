@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pertemuan10_71190449</string>
+    <string-array name="list_bahasa">
+        <item>Bahasa Indonesia</item>
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Korea</item>
+    </string-array>
+</resources>
