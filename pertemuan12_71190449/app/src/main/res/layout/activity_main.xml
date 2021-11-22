@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/edtNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="NIM" />
+
+    <EditText
+        android:id="@+id/edtIpk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="IPK"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cari" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/byNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Nama" />
+
+        <RadioButton
+            android:id="@+id/byNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By NIM" />
+
+        <RadioButton
+            android:id="@+id/byIpk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By IPK" />
+
+        <RadioButton
+            android:id="@+id/byDescending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Urut Descending" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bla bla bla" />
+
+    </ScrollView>
+
+</LinearLayout>
