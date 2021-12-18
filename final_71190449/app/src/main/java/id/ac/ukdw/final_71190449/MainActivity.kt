@@ -37,9 +37,10 @@ class MainActivity : AppCompatActivity() {
             auth = FirebaseAuth.getInstance()
             val user = auth.currentUser
             if(user != null){
+                Toast.makeText(baseContext, "Login as ${user?.email}", Toast.LENGTH_SHORT).show()
                 val filmIntent = Intent(this, FilmActivity::class.java)
                 startActivity(filmIntent)
-                finish()
+                this.finish()
             }
             btnMasuk.setOnClickListener {
                 var email = email1.text.toString()

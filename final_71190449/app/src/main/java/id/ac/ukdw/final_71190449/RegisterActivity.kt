@@ -15,7 +15,6 @@ class RegisterActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
         auth = FirebaseAuth.getInstance()
 
         val edtEmail = findViewById<EditText>(R.id.emailNew)
@@ -23,8 +22,6 @@ class RegisterActivity:AppCompatActivity() {
         val edtPassConf = findViewById<EditText>(R.id.passwordConfirmNew)
 
         val btnReg = findViewById<Button>(R.id.sign_up_btn)
-
-
         val user = auth.currentUser
 
         btnReg.setOnClickListener {

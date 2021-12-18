@@ -41,16 +41,6 @@ class FilmActivity:AppCompatActivity(){
         val edtCari = findViewById<EditText>(R.id.edtCari)
         val rcyFilm = findViewById<RecyclerView>(R.id.rcyFilm)
 
-//        val edtJudul = findViewById<EditText>(R.id.edtJudul)
-//        val edtRilis = findViewById<EditText>(R.id.edtTahun)
-//        val edtGenre = findViewById<EditText>(R.id.edtGenre)
-//        val edtRating = findViewById<EditText>(R.id.edtRating)
-
-//        val email = findViewById<TextView>(R.id.email_txt)
-//
-//        val btnKeluar = findViewById<ImageButton>(R.id.sign_out_btn)
-//        val btnPageTambah = findViewById<Button>(R.id.btnPageTambah)
-
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayShowTitleEnabled(true)
 
@@ -134,11 +124,15 @@ class FilmActivity:AppCompatActivity(){
                 auth.signOut()
                 val intentKeluar = Intent(this, MainActivity::class.java)
                 startActivity(intentKeluar)
-                finish()
+                this.finish()
             }
             R.id.tambah -> {
                 val intentTambah = Intent(this, TambahActivity::class.java)
                 startActivity(intentTambah)
+            }
+            R.id.home -> {
+                val intentHome = Intent(this, FilmActivity::class.java)
+                startActivity(intentHome)
             }
 
         }
